@@ -22,6 +22,9 @@
                                 <rect key="frame" x="192" y="615" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="登録"/>
+                                <connections>
+                                    <action selector="didClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Con-e0-ac4"/>
+                                </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6S7-Mk-fjE">
                                 <rect key="frame" x="0.0" y="336" width="414" height="162"/>
@@ -49,6 +52,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="6S7-Mk-fjE" id="1Fd-Z8-rKx"/>
+                        <outlet property="textFieldForContent" destination="vLs-R0-9d8" id="GkS-nE-Kgn"/>
+                        <outlet property="textFieldForTitle" destination="0fF-QT-PCq" id="kzS-wC-6bN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
